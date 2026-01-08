@@ -78,4 +78,27 @@
   </script>
 
 </body>
+
 </html>
+<!-- 閃爍開聲音提示 -->
+<div id="sound-alert">🔊 開聲音！</div>
+
+<style>
+  #sound-alert {
+    position: fixed;
+    bottom: 30px;       /* 距離下方 */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 48px;     /* 放大文字 */
+    font-weight: bold;
+    color: yellow;
+    animation: blink 1s infinite;
+    z-index: 1000;
+    text-shadow: 2px 2px 5px black; /* 增加陰影更醒目 */
+  }
+
+  @keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+  }
+</style>
